@@ -1,10 +1,32 @@
-#snakeboard{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@font-face {
+    font-family: 'PressStart2P';
+    src: local("PressStart2P"),
+       url("PressStart2P-Regular.ttf") format("truetype");
+}
+
+body{
+    display: flex;
+    font-family: 'PressStart2P', sans-serif;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    overflow: auto;
+    margin: auto;
+    
+}
+
+#replay{
+    font-size: 16px;
+    color: white;
+    margin: 20px;
+    display: none;
 }
 #score{
-    text-align:center;
-    font-size: 140px;
+    font-size: 120px;
+    margin: 0;
+    color: white;
+    padding: 20px;
+    height: 200px;
 }
